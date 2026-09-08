@@ -14,3 +14,8 @@
 *.xlsx  binary
 *.xlsm  binary
 *.mkv   binary
+
+# GitHub's Linguist has seven languages claiming the .m extension and picks Wolfram
+# Language for this one. It knows Power Query, but only by the .pq extension, so say it
+# outright rather than rename a file the README points at twice.
+Plex-mkclean-candidates.query.m linguist-language=powerquery
