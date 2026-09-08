@@ -1,0 +1,4 @@
+# This folder is part of the repository; what goes in it is not.
+*
+!.gitignore
+!README.md

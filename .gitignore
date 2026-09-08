@@ -1,0 +1,24 @@
+# Excel/Office temporary lock files
+~$*
+
+# Explorer leaves these behind when it records a folder's view state or builds
+# thumbnails. Both are Hidden and System, so they are invisible in Explorer
+# unless protected operating system files are shown, and in PowerShell without
+# -Force - but git sees them like any other file.
+desktop.ini
+Thumbs.db
+
+# Raw captures of the console output that appears in README.md. The README
+# carries the text itself - Markdown has no include mechanism, so a file here
+# could only ever be a second copy of it, free to drift. docs/images is
+# tracked: a picture the README points at has to be in the repository.
+docs/text/
+
+# Archive. Not published, and not version controlled at all: these files do not
+# change, and the backup chain already covers them. Git is here for history and
+# bisect, neither of which means anything for dead files.
+Old/
+
+# Prod/ and Work/ are tracked as folders but their contents are not - see the
+# .gitignore inside each. The rules live there rather than here so that the
+# folders' own .gitignore and README.md stay trackable.
